@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-REPO="https://raw.githubusercontent.com/Zsandz/kiryu/main/"
+REPO="https://raw.githubusercontent.com/king-vpn/kentang/master/"
 systemctl stop vmip vlip trip
 cd /usr/bin
 rm -rf limit-ip
