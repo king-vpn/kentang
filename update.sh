@@ -30,7 +30,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget -q https://raw.githubusercontent.com/Zsandz/kiryu/main/Cdy/menu.zip
+    wget -q https://raw.githubusercontent.com/king-vpn/kentang/master/Cdy/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
