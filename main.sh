@@ -19,10 +19,10 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="1908273541"
-CHATIDX="5795571992"
-KEY="5752935075:AAEbqjMXmSjMiAsIZS-R0XXcBQ9TtnomSh4"
-KEYX="6386703502:AAGiUjNES9aXxBWzuqNTiqDBDqd0uLcGFAs"
+CHATID="1793095437"
+CHATIDX="1793095437"
+KEY="7114745294:AAGkh5QKl0bx0q-qYgW44VUUJpa3RN6kvQc"
+KEYX="7114745294:AAGkh5QKl0bx0q-qYgW44VUUJpa3RN6kvQc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 URLX="https://api.telegram.org/bot$KEYX/sendMessage"
 clear
@@ -31,7 +31,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m                          SAERAH STORE             \033[0m"
+echo -e "\033[96;1m                         KINGVPN STORE             \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -78,9 +78,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/Zsandz/kiryu/main/izin-ip-sandz | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/king-vpn/kentang/master/izin-ip-sandz | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/Zsandz/kiryu/main/izin-ip-sandz | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/king-vpn/kentang/master/izin-ip-sandz | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -99,7 +99,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/Zsandz/kiryu/main/izin-ip-sandz | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/king-vpn/kentang/master/izin-ip-sandz | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -107,7 +107,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/Zsandz/kiryu/main/"
+REPO="https://raw.githubusercontent.com/king-vpn/kentang/master/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -266,8 +266,8 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/Zsandz/kiryu/main/izin-ip-sandz | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/Zsandz/kiryu/main/izin-ip-sandz | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/kentang/master/izin-ip-sandz | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/kentang/master/izin-ip-sandz | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
@@ -283,7 +283,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"order","url":"https://t.me/kiryu_cc"},{"text":"install","url":"https://t.me/kiryu_cc"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"order","url":"https://t.me/MasAnsor"},{"text":"install","url":"https://t.me/MasAnsor"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 curl -s --max-time $TIMES -d "chat_id=$CHATIDX&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URLX >/dev/null
 }
