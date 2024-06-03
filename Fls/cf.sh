@@ -4,15 +4,15 @@ apt install jq curl -y
 clear
 echo -e ""
 echo -e " "
-read -p "   INPUT SUBDOMAIN example (sandz):  " domen
+read -p "   INPUT SUBDOMAIN example (andi):  " domen
 echo -e ""
-DOMAIN=inject.cloud
+DOMAIN=kingvpn.my.id
 sub=${domen}
-dns=${sub}.inject.cloud
+dns=${sub}.kingvpn.my.id
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}inject.cloud
-CF_KEY=e03f30d53ad7ec2ab54327baa5e2da5ab44f0
-CF_ID=mezzqueen293@gmail.com
+dns=${sub}kingvpn.my.id
+CF_KEY=e3341a6705e970eda3577f440d0cca6e3d682
+CF_ID=hannaugo@gmail.com
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
